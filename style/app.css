@@ -1,0 +1,102 @@
+/* -------------------- */
+/* GLOBAL STYLES        */
+/* -------------------- */
+/* Layout, Typography, Colors */
+html { font-size: 65%; line-height: 1.375em; padding: 0; margin: 0; }
+body { padding: 0; margin: 0; background: #444; font-family: Georgia, serif; color: #333; -webkit-text-size-adjust: none; }
+body * { text-shadow: none; }
+
+h1, h2, h3, h4, h5, h6 { margin: 2rem 0 1rem 0; color: #000; line-height: 1; font-weight: bold; }
+
+/* Header */
+#header, #footer { height: 4rem; padding: .3rem 5rem 0 5rem; background-color: #00A0C6; border-bottom: .1rem solid #999; font-size: 1.6em; font-weight: bold; color: #fff; text-align: center; }
+#header { }
+#header h1 { position: relative; top: 6px; display: block; height: 2.5rem; width: 10.6rem; margin: 0 auto; background: url('/img/logo_head.png') no-repeat 0 0 transparent; }
+
+/* Nav Bars */
+footer { margin: 0; padding: 0; }
+footer .btn-block { display: block; position: absolute; bottom: 0; margin: 0; padding: 1.5rem 0; font-size: 1.8rem; width: 100%; font-weight: bold; text-transform: uppercase; font-weight: normal; background-color: #00A0C6; color: #fff; border: 0; border-radius: 0; }
+
+/* Popovers */
+.popover .bar-nav { background-color: #eee; }
+.popover .bar-nav .title { color: #000; }
+.popover a { color: #000; }
+
+/* Content */
+#content { background: #fff; text-align: center; z-index: 1; }
+#content .subhead { display: block; background: #f2f2f2; padding: 1rem 0 .6rem 1.2rem; margin: 0; text-align: left; font-family: Arial, sans-serif; }
+#content .subhead h3 { padding: 0; margin: 0; font-weight: bold; color: #555 }
+#content .subhead p { color: #555; margin: .4rem 2rem 0 0; }
+
+/* Tables */
+.table-view { text-align: left }
+.table-view h4 { padding: 0; margin: 0; color: #333; font-weight: normal; }
+.table-view p { padding: 0; color: #333; font-weight: normal; line-height: 1.75rem; }
+.table-view li { min-height: 7rem; background-color: #f9f9f9; border-bottom: 1px solid #e2e2e2; font-family: Arial, sans-serif; line-height: 1.375em; }
+.table-view img { float: left; margin: 0; padding: 0; }
+.table-view .copy { margin-left: 6rem; }
+.table-view .copy p { margin-top: .3rem; color: #333; }
+.table-view .copy .time { float: right; font-size: 1.2rem; color: #777; margin-right: -4.5rem; }
+.table-view .copy p.stats { font-size: 1.2rem; }
+.table-view .copy p span { color: #777; padding: 0 .2rem 0 1rem; }
+.table-view .copy p span:first-child { padding-left: 0; }
+
+/* Slide navigation */
+.menu { }
+.menu_right h4 { color: #fff; }
+
+/* Helpers */
+.dwyer { display: block; width: 0; height: 0; font-size: 0; line-height: 0; overflow: hidden; }
+.right { float: right }
+.left { float: left }
+.center { text-align: center }
+.hide { display: none; line-height: 0 }
+.hidden { visibility: none }
+.clear { clear: both }
+
+/* ----- */
+/* MMenu */
+/* ----- */
+h1, h2, h3 { font-size: 18px; }
+h4, h5, h6 { font-size: 16px; }
+p { margin: 0 0 10px 0; }
+a, a:link, a:active, a:visited, a:hover { color: #333; text-decoration: none; }
+pre { font-size: 12px; width: 100%; overflow: auto; -webkit-overflow-scrolling: touch; }
+#page nav { display: none; }
+#header a { color: #fff; font-size: 2.2rem; opacity: .9; }
+#header a.menu, .header a.menu { position: absolute; top: .8rem; left: .7rem; font-size: 2.7rem; }
+#header a.gifts, .header a.gifts { position: absolute; top: .8rem; right: .7rem; }
+
+/* -------------------- */
+/* PAGE-SPECIFIC STYLES */
+/* -------------------- */
+
+/* Welcome */
+.welcome .content { background: #00A0C6; padding: 0; margin: 0; }
+/* ... top sections ... */
+.welcome .slider { display: block; position: absolute; z-index: 2000; height: 75% !important; }
+.welcome .top { position: absolute; height: 100%; width: 100%; }
+.welcome .top h1 { width: 15.4rem; height: 30%; margin: 0 auto; padding: 0; background: url('/img/logo_splash.png') no-repeat 0 bottom; }
+.welcome .top h2 { width: 15.4rem; height: 15%; margin: 0 auto; padding: 0; background: url('/img/logo_splash.png') no-repeat 0 bottom; }
+.welcome .top p { color: #BCE5F2; font-size: 150%; margin: 1rem auto 0 auto; text-align: center; font-family: "Georgia", serif; }
+.welcome .ribbon_bg { position: absolute; bottom: 0; width: 100%; }
+.welcome .ribbon_bg, .welcome .top .ribbon { padding: 1rem 0; background-color: #5F5D27; }
+.welcome .top .ribbon { display: block; position: absolute; bottom: 0; width: 100%; margin: 0; color: #fff; }
+/* ... bottom sections ... */
+.welcome .bottom { position: absolute; bottom: 0; height: 25%; min-height: 10rem; width: 100%; background: url('/img/bg_zigzag.png') repeat center center; }
+.welcome .bottom .arrow { position: absolute; display: table; top: -13px; left: 50%; margin-left: -13px; height: 25px; width: 25px; background-color: #605e27; transform:rotate(45deg); -ms-transform:rotate(45deg); -webkit-transform:rotate(45deg); }
+.welcome .bottom .paginator { display: table; position: absolute; top: 20%; left: 0; margin: 0 auto; padding: 0; position: relative; list-style: none; }
+.welcome .bottom .paginator li { float: left; height: 1.6rem; width: 1.6rem; margin: 0 .3rem; background-color: #fff; border: .1rem solid #BBBDC0; -webkit-border-radius: 100%; -moz-border-radius: 100%; border-radius: 100%; }
+.welcome .bottom .paginator li.selected { background-color: #0E9FC6; border-color: #888; }
+.welcome .bottom button { position: absolute; bottom: 20%; left: 0; padding: 0; margin: 0 10%; width: 80%; height: 35%; background-color: #0E9FC6; text-transform: uppercase; color: #fff; }
+/* ... slider ... */
+.welcome .slider { background-color: #0E9FC6; }
+.welcome .slider, .welcome .slide-group { height: 100%; }
+/* ... images ... */
+.welcome .slide-img { display: table; position: absolute; bottom: .5rem; z-index: 0; }
+.welcome .slide-img1 { height: 17.4rem; width: 100%; background: url('/img/img_welcome_drink.png') no-repeat center 0; max-width: 100% }
+.welcome .slide-img2 { top: 30%; height: 33.5rem; width: 100%; background: url('/img/img_welcome_chat.png') no-repeat center 0; max-width: 100% }
+.welcome .slide-img3 { top: 30%; height: 33.5rem; width: 100%; background: url('/img/img_welcome_chat.png') no-repeat center 0; max-width: 100% }
+.welcome .slide-img4 { top: 30%; height: 33.5rem; width: 100%; background: url('/img/img_welcome_chat.png') no-repeat center 0; max-width: 100% }
+
+/* Checkin */

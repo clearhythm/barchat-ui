@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta name="author" content="www.frebsite.nl" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=no" />
+
+		<title>BarChat</title>
+
+		<link type="text/css" rel="stylesheet" href="/lib/mmenu/css/jquery.mmenu.all.css" />
+    <link rel="stylesheet" href="/lib/ratchet-v2.0.1/css/ratchet.css">
+	  <link rel="stylesheet" href="/style/app.css">
+	</head>
+	<body>
+		<div id="page">
+	    <div id="content">
+				<div id="header">
+					<a href="#menu-left">yo</a>
+					<h1><span class="dwyer">BarChat</span></h1>
+					<a href="#menu-right" class="gifts right">ma</a>
+				</div>
+	      <h3 class="subhead">Santa Cruz Bars</h3>
+				<ul class="table-view">
+				  <li class="table-view-cell">
+				    <a class="navigate-right" href="#">
+							<p>4 checked in</p>
+				    </a>
+				  </li>
+				  <li class="table-view-cell">
+				    <a class="navigate-right" href="#">
+				      <h4>The Red Room</h4>
+							<p>4 checked in, 500 ft away</p>
+				    </a>
+				  </li>
+				  <li class="table-view-cell">
+				    <a class="navigate-right" href="#">
+				      <h4>One Double Oh Seven</h4>
+							<p>3 checked in, .6 mi away</p>
+				    </a>
+				  </li>
+				  <li class="table-view-cell">
+				    <a class="navigate-right" href="#">
+				      <h4>Rosie Mc'Canns</h4>
+							<p>1 checked in, .1 mi away</p>
+				    </a>
+				  </li>
+				  <li class="table-view-cell">
+				    <a class="navigate-right" href="#">
+				      <h4>515 Kitchen and Cocktails</h4>
+							<p>.1 mile away</p>
+				    </a>
+				  </li>
+				</ul>
+				<footer class="bar bar-standard bar-footer">
+					<button class="btn btn-block">Check In</button>
+				</footer>
+			</div>
+			<nav id="menu-left" class="menu menu_left">
+				<ul>
+					<li><a href="horizontal-submenus.html">Check In</a></li>
+					<li><a href="vertical-submenus.html">Profile</a></li>
+					<li><a href="photos.html">Gift Bar</a></li>
+					<li><a href="positions.html">Settings</a></li>
+				</ul>
+			</nav>
+			<nav id="menu-right" class="menu menu_right">
+				<ul>
+					<h4>Gift Bar</h4>
+					<li><a href="activity.html">Activity</a></li>
+					<li><p>No new activity.</p></li>
+					<li><a href="gifts.html">Gifts</a></li>
+					<li><h4>Get Social!</h4>
+						<p>Send gifts to your friends or other cute people at the bar!
+							Buy gifts with points or cash.
+							Get FREE points for posting pics, text, or likes - it's easy!</p></li>
+				</ul>
+			</nav>
+		</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/hammer.js/1.0.5/jquery.hammer.min.js"></script>
+		<script type="text/javascript" src="/lib/mmenu/js/jquery.mmenu.min.all.js"></script>
+		<script type="text/javascript">
+
+			//	The menu on the left
+			$(function() {
+				$('nav#menu-left').mmenu({
+					position	: 'left',
+					classes		: 'mm-dark',
+					dragOpen	: true
+				});
+			});
+
+			//	The menu on the right
+			$(function() {
+				$('nav#menu-right').mmenu({
+					position	: 'right',
+					classes		: 'mm-dark',
+					dragOpen	: true
+				});
+			});
+		</script>
+	</body>
+</html>
