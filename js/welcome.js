@@ -10,3 +10,11 @@ var updatePaginator = function(new_slide){
 }
 
 window.addEventListener('push', function(){ console.log('foo'); });
+
+// TODO: Get rid of thsi hack, just here to make for testing
+$('button').click(function(){
+  window.location.href="/wall.html";
+});
+$('button').touchend(function(){
+  window.location.href="/wall.html";
+});
