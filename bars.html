@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Barchat</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <!-- Styles -->
+    <link rel="stylesheet" href="/style/ratchet-mod.css">
+	  <link rel="stylesheet" href="/style/app-mod.css">
+		<link href="http://code.ionicframework.com/ionicons/1.4.1/css/ionicons.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="side-menu-siblings-wrapper">
+      <header class="bar bar-nav">
+        <a class="icon icon-bars pull-left" href="#mySideMenuExample"></a>
+	      <a class="icon ion-log-in pull-right" href="wall.html"></a>
+				<h1 class="logo"><span class="dwyer">BarChat</span></h1>
+				<div class="status badge badge-negative">1</div>
+      </header>
+
+	    <div class="bar bar-standard bar-header-secondary">
+	      <form>
+	        <input type="search" placeholder="Search">
+	      </form>
+	    </div>
+
+	    <div class="content content-main">
+
+				<div class="subhead">
+					<h3>Santa Cruz Bars</h3>
+				</div>
+
+	      <ul class="table-view">
+	        <li class="table-view-cell media">
+	          <a class="navigate-right" href="bar-detail.html" data-transition="slide-in">
+	            <div class="media-body">
+	              <h4>The Red Room</h4>
+	              <p>4 checked in, 500 ft away</p>
+	            </div>
+	          </a>
+	        </li>
+	        <li class="table-view-cell media">
+	          <a class="navigate-right" href="bar-detail.html" data-transition="slide-in">
+	            <div class="media-body">
+	              <h4>One Double Oh Seven</h4>
+	              <p>3 checked in, .6 mi away</p>
+	            </div>
+	          </a>
+	        </li>
+	        <li class="table-view-cell media">
+	          <a class="navigate-right" href="bar-detail.html" data-transition="slide-in">
+	            <div class="media-body">
+	              <h4>Rosie Mc&#8217;Canns</h4>
+	              <p>1 checked in, .1 mi away</p>
+	            </div>
+	          </a>
+	        </li>
+	        <li class="table-view-cell media">
+	          <a class="navigate-right" href="bar-detail.html" data-transition="slide-in">
+	            <div class="media-body">
+	              <h4>515 Kitchen and Cocktails</h4>
+	              <p>.1 mi away</p>
+	            </div>
+	          </a>
+	        </li>
+	        <li class="table-view-cell media">
+	          <a class="navigate-right" href="bar-detail.html" data-transition="slide-in">
+	            <div class="media-body">
+								<h4>Motiv</h4>
+	              <p>.1 mi away</p>
+	            </div>
+	          </a>
+	        </li>
+	      </ul>
+	    </div>
+	    <!-- Compose modal -->
+	    <div id="composeModal" class="modal action-sheet">
+	      <header class="bar bar-nav">
+	        <a class="icon icon-close pull-right" href="#composeModal"></a>
+	        <h1 class="title">Post to Wall</h1>
+	      </header>
+
+	      <div class="content">
+	        <div class="content-padded">
+						<h4><div class="center">Score FREE Drinks!</div></h4>
+						<img src="/img/img_drink.png">
+						<ul style="font-size: 80%; margin-right: 5%">
+							<li>Post <strong>text</strong> or <strong>photos</strong>, get noticed!</li>
+							<li>Try funny, silly, outrageous, or cute.</li>
+							<li><strong>Score points</strong> for likes and replies.
+								You can <strong>get gifts</strong> with points, so start snapping!</li>
+							<li>Bartenders may gift drinks to top posters.</li>
+							<li>No trash talking, please.</li>
+						</ul>
+	          <div class="center"><button class="btn">How Points Work</button> <button class="btn">View My Points</button></div>
+	        </div>
+					<div class="footer">
+						<button class="btn btn-primarys btn-block"><span class="icon ion-chatbubbles"></span> Post Text</button>
+						<button class="btn btn-primarys btn-block"><span class="icon ion-camera"></span> Post Photo</button>
+					</div>
+	      </div>
+	    </div>
+		</div>
+
+    <div id="mySideMenuExample" class="side-menu">
+      <div class="content">
+        <ul class="table-view">
+	        <li class="table-view-cell selected">
+	          <a href="bar-detail.html" data-transition="slide-in">
+							<h4><span class="icon ion-log-in"></span> Check In</h4>
+	          </a>
+	        </li>
+	        <li class="table-view-cell">
+	          <a href="bar-detail.html" data-transition="slide-in">
+							<h4><span class="icon ion-person"></span> Profile</h4>
+	          </a>
+	        </li>
+	        <li class="table-view-cell">
+	          <a href="bar-detail.html" data-transition="slide-in">
+							<h4><span class="icon ion-paper-airplane"></span> Gifts</h4>
+							<div class="status badge badge-negative">1</div>
+	          </a>
+	        </li>
+	        <li class="table-view-cell">
+	          <a href="bar-detail.html" data-transition="slide-in">
+							<h4><span class="icon ion-gear-a"></span> Settings</h4>
+	          </a>
+	        </li>
+        </ul>
+      </div>
+    </div>
+		<!-- Scripts -->
+    <script src="/js/ratchet-mod.js"></script>
+  </body>
+</html>
