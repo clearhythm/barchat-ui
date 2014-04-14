@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Barchat</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <!-- TODO: remove below tag in production, just useful for quick localhost testing -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
     <!-- Styles -->
     <link rel="stylesheet" href="/style/ratchet-mod.css">
 	  <link rel="stylesheet" href="/style/app-mod.css">
@@ -105,25 +107,25 @@
     <div id="mySideMenuExample" class="side-menu">
       <div class="content">
         <ul class="table-view">
+	        <li class="table-view-cell">
+	          <a href="profile.html">
+							<h4><span class="icon ion-person"></span>Profile</h4>
+	          </a>
+	        </li>
 	        <li class="table-view-cell selected">
-	          <a href="bar-detail.html" data-transition="slide-in">
-							<h4><span class="icon ion-log-in"></span> Check In</h4>
+	          <a href="bars.html">
+							<h4><span class="icon ion-log-in"></span>Check In</h4>
 	          </a>
 	        </li>
 	        <li class="table-view-cell">
-	          <a href="bar-detail.html" data-transition="slide-in">
-							<h4><span class="icon ion-person"></span> Profile</h4>
-	          </a>
-	        </li>
-	        <li class="table-view-cell">
-	          <a href="bar-detail.html" data-transition="slide-in">
-							<h4><span class="icon ion-paper-airplane"></span> Gifts</h4>
+	          <a href="points.html">
+							<h4><span class="icon ion-beer"></span>Points</h4>
 							<div class="status badge badge-negative">1</div>
 	          </a>
 	        </li>
 	        <li class="table-view-cell">
-	          <a href="bar-detail.html" data-transition="slide-in">
-							<h4><span class="icon ion-gear-a"></span> Settings</h4>
+	          <a href="settings.html">
+							<h4><span class="icon ion-gear-a"></span>Settings</h4>
 	          </a>
 	        </li>
         </ul>

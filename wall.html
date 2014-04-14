@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Barchat</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <!-- TODO: remove below tag in production, just useful for quick localhost testing -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
     <!-- Styles -->
     <link rel="stylesheet" href="/style/ratchet-mod.css">
 	  <link rel="stylesheet" href="/style/app-mod.css">
@@ -25,7 +27,7 @@
 	    <div class="content content-main">
 				<ul class="table-view">
 				  <li class="table-view-cell">
-				    <a class="navigate-right" href="chat-detail.html">
+				    <a class="navigate-right" href="chat-detail.html" data-transition="slide-in">
 							<img src="http://placehold.it/50x50">
 				      <div class="copy">
 								<h4>Justin<span class="time">just now</span></h4>
@@ -37,7 +39,7 @@
 				    </a>
 				  </li>
 				  <li class="table-view-cell">
-				    <a class="navigate-right" href="chat-detail.html">
+				    <a class="navigate-right" href="chat-detail.html" data-transition="slide-in">
 							<img src="http://placehold.it/50x50">
 				      <div class="copy">
 								<h4>Ron<span class="time">23 mins</span></h4>
@@ -48,7 +50,7 @@
 				    </a>
 				  </li>
 				  <li class="table-view-cell">
-				    <a class="navigate-right" href="chat-detail.html">
+				    <a class="navigate-right" href="chat-detail.html" data-transition="slide-in">
 							<img src="http://placehold.it/50x50">
 				      <div class="copy">
 								<h4>Laticia<span class="time">57 mins</span></h4>
@@ -58,18 +60,18 @@
 				    </a>
 				  </li>
 				  <li class="table-view-cell">
-				    <a class="navigate-right" href="chat-detail.html">
+				    <a class="navigate-right" href="chat-detail.html" data-transition="slide-in">
 							<img src="http://placehold.it/50x50">
 				      <div class="copy">
 								<h4>Analisia<span class="time">2 hrs</span></h4>
-								<p><em>Added a new photo.</em></p>
+								<p><em>Shared a photo.</em></p>
 								<p class="stats">
 									<span class="icon ion-chatbubble"></span> 0 comments</p>
 							</div>
 				    </a>
 				  </li>
 				  <li class="table-view-cell">
-				    <a class="navigate-right" href="chat-detail.html">
+				    <a class="navigate-right" href="chat-detail.html" data-transition="slide-in">
 							<img src="http://placehold.it/50x50">
 				      <div class="copy">
 								<h4>Rob<span class="time">yesterday</span></h4>
@@ -90,14 +92,14 @@
 	      </header>
 	      <div class="content">
 	        <div class="content-padded">
-						<h4><div class="center">Score FREE Drinks!</div></h4>
+						<h4>Post, Score, Share!</h4>
 						<img src="/img/img_drink.png">
 						<ul style="font-size: 80%; margin-right: 5%">
-							<li>Post <strong>text</strong> or <strong>photos</strong>, get noticed!</li>
-							<li>Try funny, silly, outrageous, or cute.</li>
-							<li><strong>Score points</strong> for likes and replies.
-								You can <strong>get gifts</strong> with points, so start snapping!</li>
-							<li>Bartenders may gift drinks to top posters.</li>
+							<li><strong>Post text</strong> or <strong>photos</strong>.
+								Try funny, cute, or outrageous chats to get noticed!</li>
+							<li><strong>Score points</strong> for popular posts.</li>
+							<li><strong>Redeem points</strong> for cool gifts, including
+								<strong>FREE drinks</strong> from the bar!</li>
 							<li>No trash talking, please.</li>
 						</ul>
 	          <div class="center"><button class="btn">How Points Work</button> <button class="btn">View My Points</button></div>
@@ -114,29 +116,29 @@
       <div class="content">
         <ul class="table-view">
 	        <li class="table-view-cell">
-	          <a href="bar-detail.html" data-transition="slide-in">
-							<h4><span class="icon ion-person"></span> Profile</h4>
+	          <a href="profile.html">
+							<h4><span class="icon ion-person"></span>Profile</h4>
 	          </a>
 	        </li>
 	        <li class="table-view-cell selected">
-	          <a href="bar-detail.html" data-transition="slide-in">
-							<h4><span class="icon ion-chatbubble"></span> Bar</h4>
+	          <a href="wall.html">
+							<h4><span class="icon ion-chatbubble"></span>Bar</h4>
 	          </a>
 	        </li>
 	        <li class="table-view-cell">
-	          <a href="bar-detail.html" data-transition="slide-in">
-							<h4><span class="icon ion-beer"></span> Points</h4>
+	          <a href="points.html">
+							<h4><span class="icon ion-beer"></span>Points</h4>
 							<div class="status badge badge-negative">1</div>
 	          </a>
 	        </li>
 	        <li class="table-view-cell">
-	          <a href="bar-detail.html" data-transition="slide-in">
-							<h4><span class="icon ion-gear-a"></span> Settings</h4>
+	          <a href="settings.html">
+							<h4><span class="icon ion-gear-a"></span>Settings</h4>
 	          </a>
 	        </li>
 	        <li class="table-view-cell">
-	          <a href="bars.html" data-transition="slide-in">
-							<h4><span class="icon ion-log-out"></span> Check Out</h4>
+	          <a href="bars.html">
+							<h4><span class="icon ion-log-out"></span>Check Out</h4>
 	          </a>
 	        </li>
         </ul>
